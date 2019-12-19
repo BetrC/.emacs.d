@@ -452,7 +452,8 @@ It can be inserted into '~/.emacs' file to config Emacs fonts.
     (32   39.0 39.0))
   "一个列表，每一个元素都有类似结构：(英文字号 中文字号 EXT-B字体字号).")
 
-(defcustom cnfonts-personal-fontnames nil
+(defcustom cnfonts-personal-fontnames
+  '(("Cascadia Code" "Monaco for Powerline"))
   "用户自己维护的字体列表，其结构与 `cnfonts--fontnames-fallback' 一致."
   :group 'cnfonts)
 
@@ -462,8 +463,7 @@ It can be inserted into '~/.emacs' file to config Emacs fonts.
   :type 'integer)
 
 (defconst cnfonts--fontnames-fallback
-  '(("Cascadia Code" "Monaco for Powerline" "Monaco" "Consolas" "DejaVu Sans Mono"
-     "Droid Sans Mono" "PragmataPro""Courier" "Courier New" "Ubuntu Mono" "Liberation Mono"
+  '(("Monaco" "Consolas" "DejaVu Sans Mono" "Droid Sans Mono" "PragmataPro""Courier" "Courier New" "Ubuntu Mono" "Liberation Mono"
      "MonacoB" "MonacoB2" "MonacoBSemi" "Droid Sans Mono Pro" "Inconsolata" "Source Code Pro"
      "Lucida Console" "Envy Code R" "Andale Mono" "Lucida Sans Typewriter" "monoOne"
      "Lucida Typewriter" "Panic Sans" "Hack" "Bitstream Vera Sans Mono" "HyperFont" "PT Mono"

@@ -104,8 +104,6 @@
 ;; let spacemacs mode-line icon correct
 (cnfonts-set-spacemacs-fallback-fonts)
 
-cnfonts--custom-set-fontnames
-
 ;;org-mode hightlight
 (require 'org)
 (setq org-src-fontify-natively t)
@@ -150,7 +148,12 @@ cnfonts--custom-set-fontnames
 (setq auto-mode-alist
       (append
        '(("\\.js\\'" . js2-mode))
-	 auto-mode-alist))
+       auto-mode-alist))
+
+;; config lua-mode for lua file
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
