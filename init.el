@@ -7,9 +7,7 @@
 (when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
-  (add-to-list 'package-archives '("melpa", "http:melpa.org/packages/") t))
-
-
+  (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t))
 
 (require 'cl)
 
@@ -23,7 +21,9 @@
 		      smartparens
 		      js2-mode
 		      nodejs-repl
-		      ) "Default packages")
+		      lua-mode
+		      cnfonts
+          ) "Default packages")
 
 (setq package-selected-packages my/packages)
 
@@ -39,16 +39,20 @@
        (when (not (package-installed-p pkg))
          (package-install pkg))))
 
- ;; Find Executable Path on OS X
- (when (memq window-system '(mac ns))
+;; Find Executable Path on OS X
+(when (memq window-system '(mac ns))
    (exec-path-from-shell-initialize))
 
+(setq w32-use-w32-font-dialog nil)
 
-
-;mode open or close
-;close some default mode
+;; mode open or close
+;; close some default mode
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+
+;; menu bar
+(require 'menu-bar)
+(menu-bar-mode nil)
 
 ;open some useful mode
 (global-linum-mode t)
@@ -58,19 +62,51 @@
 (global-hl-line-mode t)
 
 
+;; set some mode
 
-;set some mode
+;; kill whole line
+(setq kill-whole-line t)
+
+;; big file no warning
+(setq  large-file-warning-threshold nil)
+
+;; remember cursor position
+(setq-default save-place t)
+(require 'saveplace)
+(save-place-mode t)
+;; replace "yes" by 'y'
+(fset 'yes-or-no-p 'y-or-n-p)
+;; hide default screen
 (setq inhibit-splash-screen t)
+;; set cursor type
 (setq-default cursor-type 'bar)
+;; no backup
 (setq make-backup-files nil)
+;; headline
+(setq frame-title-format "%b  [%I] %f  GNU/Emacs" )
+;; kill ring
+(setq kill-ring-max 200)
+(setq kill-do-not-save-duplicates t)
+;; fill column auto
+(setq-default fill-column 80)
+
+
 ;; full screen
 ;;(setq initial-frame-alist (quote ((fullscreen . maximized))))
 
-;font size
-(set-face-attribute 'default nil :height 140)
+;;font size
+(set-face-attribute 'default nil :height 120)
 
+;; cnfonts
+(require 'cnfonts)
+;; let cnfonts enable when emacs start
+(cnfonts-enable)
+;; let spacemacs mode-line icon correct
+(cnfonts-set-spacemacs-fallback-fonts)
 
-;org-mode hightlight
+cnfonts--custom-set-fontnames
+
+;;org-mode hightlight
 (require 'org)
 (setq org-src-fontify-natively t)
 
@@ -122,10 +158,15 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-idle-delay 0.08)
- '(company-minimum-prefix-length 1))
+ '(company-minimum-prefix-length 1)
+ '(package-selected-packages
+   (quote
+    (cnfonts company monokai-theme hungry-delete swiper counsel smartparens js2-mode nodejs-repl)))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "Cascadia Code", "Monaco for PowerLine", "Microsoft YaHei UI" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
