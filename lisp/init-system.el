@@ -61,8 +61,17 @@
   (find-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "<f2>") 'open-init-file)
 
+;; auto load file that modified out
+(global-auto-revert-mode 1)
+;; close auto save
+(setq auto-save-default nil)
 
+;; igonre bell
+(setq ring-bell-function 'ignore)
 
+;; ponwin
+(require 'popwin)
+(popwin-mode 1)
 ;;-----------------------------------------------------------
 ;; End if init-system
 ;;-----------------------------------------------------------
