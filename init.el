@@ -5,12 +5,13 @@
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 
-(require 'init-system)
-(require 'init-font)
-(require 'init-theme)
+
+(require 'init-ui)
 (require 'init-org)
 (require 'init-ivy)
 (require 'init-company)
+(require 'init-system)
+(require 'init-font)
 
 ;; scripting language initialize
 (require 'init-lua)

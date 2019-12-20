@@ -3,8 +3,8 @@
 
 (require 'cnfonts)
 (cnfonts-enable)
-(cnfonts-set-spacemacs-fallback-fonts)
 
+(setq cnfonts-keep-frame-size nil)
 
 ;; init font end here
 (provide 'init-font)

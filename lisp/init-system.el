@@ -72,6 +72,11 @@
 ;; ponwin
 (require 'popwin)
 (popwin-mode 1)
+
+;; debug on error
+(setq debug-on-error t)
+
+
 ;;-----------------------------------------------------------
 ;; End if init-system
 ;;-----------------------------------------------------------

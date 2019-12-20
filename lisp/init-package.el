@@ -7,8 +7,7 @@
 (when (>= emacs-major-version 24)
   (require 'package)
   (package-initialize)
-  (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t))
-
+  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
 
 (require 'cl)
 
@@ -25,6 +24,7 @@
 		      lua-mode
 		      cnfonts
 		      popwin
+		      company-lua
           ) "Default packages")
 
 (setq package-selected-packages my/packages)

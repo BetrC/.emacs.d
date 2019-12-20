@@ -4,4 +4,17 @@
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
+(require 'company)
+(require 'company-lua)
+
+(defun my-lua-mode-company-init()
+  (setq-local company-backends '(
+				 (company-lua)
+				 (company-etags)
+				 (company-dabbrev-code)
+				 (company-yasnippet)
+				 )))
+
+(add-hook 'lua-mode-hook #'my-lua-mode-company-init)
+
 (provide 'init-lua)
