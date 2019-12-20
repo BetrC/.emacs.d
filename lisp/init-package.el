@@ -25,6 +25,7 @@
 		      cnfonts
 		      popwin
 		      company-lua
+		      reveal-in-osx-finder
           ) "Default packages")
 
 (setq package-selected-packages my/packages)

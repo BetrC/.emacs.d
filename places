@@ -1,14 +1,22 @@
 ;;; -*- coding: utf-8 -*-
-(("c:/Users/Administrator/AppData/Roaming/.emacs.d/recentf" . 980)
- ("c:/test.lua" . 2)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/init.el" . 364)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/"
-  (dired-filename . "c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/init-lua.el"))
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/init-lua.el" . 468)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/init-package.el" . 949)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/elpa/company-lua-20171108.2306/company-lua-autoloads.el" . 634)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/elpa/f-20191110.1357/f-autoloads.el" . 368)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/elpa/s-20180406.808/s-autoloads.el" . 368)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/init-system.el" . 533)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/init-font.el" . 82)
- ("c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/init-ui.el" . 3))
+(("/Users/betr/.emacs.d/recentf" . 707)
+ ("/Users/betr/.emacs.d/init.el" . 173)
+ ("/Users/betr/.emacs.d/lisp/init-file-sys.el" . 596)
+ ("/Users/betr/.emacs.d/lisp/init-window.el" . 19)
+ ("/Users/betr/.emacs.d/lisp/init-package.el" . 735)
+ ("/Users/betr/.emacs.d/lisp/" . 918)
+ ("/Users/betr/.emacs.d/cnfonts/cnfonts.conf" . 24)
+ ("/Users/betr/.emacs.d/lisp/init-coding.el" . 411)
+ ("/Users/betr/.emacs.d/"
+  (dired-filename . "/Users/betr/.emacs.d/lisp"))
+ ("/Users/betr/.emacs.d/elpa/"
+  (dired-filename . "/Users/betr/.emacs.d/elpa/.."))
+ ("/Users/betr/.emacs.d/cnfonts/"
+  (dired-filename . "/Users/betr/.emacs.d/cnfonts/cnfonts.conf"))
+ ("/Users/betr/.IdentityService/"
+  (dired-filename . "/Users/betr/.IdentityService/AccountStore.json"))
+ ("/Users/betr/.IdentityService/AccountStore.json" . 3748)
+ ("/Users/betr/.emacs.d/lisp/init-font.el" . 186)
+ ("/Users/betr/.emacs.d/lisp/init-company.el" . 343)
+ ("/Users/betr/"
+  (dired-filename . "/Users/betr/.CFUserTextEncoding")))
