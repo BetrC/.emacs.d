@@ -1,22 +1,13 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/betr/.emacs.d/recentf" . 707)
- ("/Users/betr/.emacs.d/init.el" . 173)
- ("/Users/betr/.emacs.d/lisp/init-file-sys.el" . 596)
- ("/Users/betr/.emacs.d/lisp/init-window.el" . 19)
- ("/Users/betr/.emacs.d/lisp/init-package.el" . 735)
- ("/Users/betr/.emacs.d/lisp/" . 918)
- ("/Users/betr/.emacs.d/cnfonts/cnfonts.conf" . 24)
- ("/Users/betr/.emacs.d/lisp/init-coding.el" . 411)
- ("/Users/betr/.emacs.d/"
-  (dired-filename . "/Users/betr/.emacs.d/lisp"))
- ("/Users/betr/.emacs.d/elpa/"
-  (dired-filename . "/Users/betr/.emacs.d/elpa/.."))
- ("/Users/betr/.emacs.d/cnfonts/"
-  (dired-filename . "/Users/betr/.emacs.d/cnfonts/cnfonts.conf"))
- ("/Users/betr/.IdentityService/"
-  (dired-filename . "/Users/betr/.IdentityService/AccountStore.json"))
- ("/Users/betr/.IdentityService/AccountStore.json" . 3748)
- ("/Users/betr/.emacs.d/lisp/init-font.el" . 186)
- ("/Users/betr/.emacs.d/lisp/init-company.el" . 343)
- ("/Users/betr/"
-  (dired-filename . "/Users/betr/.CFUserTextEncoding")))
+(("c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/init-org.el" . 136)
+ ("c:/Users/Administrator/AppData/Roaming/.emacs.d/recentf" . 1081)
+ ("c:/Docs/" . 198)
+ ("c:/Docs/str.org" . 202)
+ ("c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/"
+  (dired-filename . "c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp/init-org.el"))
+ ("c:/Users/Administrator/AppData/Roaming/.emacs.d/"
+  (dired-filename . "c:/Users/Administrator/AppData/Roaming/.emacs.d/lisp"))
+ ("c:/Users/Administrator/AppData/Roaming/"
+  (dired-filename . "c:/Users/Administrator/AppData/Roaming/.emacs.d"))
+ ("c:/Users/Administrator/AppData/"
+  (dired-filename . "c:/Users/Administrator/AppData/Roaming")))
