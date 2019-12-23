@@ -1,0 +1,9 @@
+* Target
+
+** TODO Day 1
+- web-mode
+- js2-refactor
+- occur
+- expand-region
+- iedit
+- menu
