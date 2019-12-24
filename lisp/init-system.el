@@ -76,8 +76,41 @@
 ;; debug on error
 (setq debug-on-error t)
 
+;; do not complete '
+(sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
+(sp-local-pair 'lisp-interaction-mode "'" nil :actions nil)
 
+;; show parent
+(define-advice show-paren-function (:around (fn) fix-show-paren-function)
+  "Highlight enclosing parens."
+  (cond ((looking-at-p "\\s(") (funcall fn))
+	(t (save-excursion
+	     (ignore-errors (backward-up-list))
+	     (funcall fn)))))
+
+;; occur
+(defun occur-dwim ()
+  "Call `occur' with a sane default."
+  (interactive)
+  (push (if (region-active-p)
+	    (buffer-substring-no-properties
+	     (region-beginning)
+	     (region-end))
+	  (let ((sym (thing-at-point 'symbol)))
+	    (when (stringp sym)
+	      (regexp-quote sym))))
+	regexp-history)
+  (call-interactively 'occur))
+(global-set-key (kbd "M-s o") 'occuer-dwim)
+
+;; expand-region
+(global-set-key (kbd "C-=") 'er/expand-region)
+
+;; iedit
+(require 'iedit)
+;; set my region color
+(set-face-background 'region "dark cyan")
 ;;-----------------------------------------------------------
-;; End if init-system
+;; End of init-system
 ;;-----------------------------------------------------------
 (provide 'init-system)

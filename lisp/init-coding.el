@@ -16,7 +16,7 @@
 	(indent-buffer)
 	(message "Indent buffer.")))))
 
-(global-set-key (kbd "C-=") 'indent-region-or-buffer)
+(global-set-key (kbd "C-'") 'indent-region-or-buffer)
 
 
 ;; hipper complete

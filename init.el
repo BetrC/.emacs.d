@@ -18,7 +18,7 @@
 ;; scripting language initialize
 (require 'init-coding)
 (require 'init-lua)
-(require 'init-js)
+(require 'init-web)
 
 ;; custom
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
