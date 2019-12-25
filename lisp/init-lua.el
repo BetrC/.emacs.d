@@ -17,4 +17,8 @@
 
 (add-hook 'lua-mode-hook #'my-lua-mode-company-init)
 
+;; flymake-lua
+(require 'flymake-lua)
+  (add-hook 'lua-mode-hook 'flymake-lua-load)
+
 (provide 'init-lua)

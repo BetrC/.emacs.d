@@ -30,7 +30,9 @@
 		      js2-refactor
 		      expand-region
 		      iedit
-		      
+		      luarocks
+		      flymake-lua
+		      flycheck
           ) "Default packages")
 
 (setq package-selected-packages my/packages)
@@ -51,7 +53,10 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
-
+;; snails just test
+(when (memq window-system '(mac ns))
+  (add-to-list 'load-path "~/.emacs.d/lisp/snails") ; add snails to your load-path
+  (require 'snails))
 
 
 ;; init packages end here

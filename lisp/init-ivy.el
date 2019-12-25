@@ -11,6 +11,9 @@
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 (global-set-key (kbd "C-c p f") 'counsel-git)
 
+;; snails
+(global-set-key (kbd "C-.") 'snails)
+
 
 ;; ivy init end here
 (provide 'init-ivy)
