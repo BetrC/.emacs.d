@@ -110,6 +110,8 @@
 (require 'iedit)
 ;; set my region color
 (set-face-background 'region "dark cyan")
+
+(global-set-key (kbd "C-w") 'backward-kill-word)
 ;;-----------------------------------------------------------
 ;; End of init-system
 ;;-----------------------------------------------------------

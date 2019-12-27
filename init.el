@@ -14,11 +14,13 @@
 (require 'init-system)
 (require 'init-font)
 (require 'init-file-sys)
+(require 'init-evil)
 
 ;; scripting language initialize
 (require 'init-coding)
 (require 'init-lua)
 (require 'init-web)
+
 
 ;; custom
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))

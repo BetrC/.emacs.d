@@ -33,6 +33,12 @@
 		      luarocks
 		      flymake-lua
 		      flycheck
+		      evil
+		      evil-leader
+		      window-numbering
+		      evil-surround
+		      evil-nerd-commenter
+		      which-key
           ) "Default packages")
 
 (setq package-selected-packages my/packages)
